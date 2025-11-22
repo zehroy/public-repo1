@@ -6,8 +6,8 @@ from utils import read_mysql_table, save_to_s3
 
 
 # Some setup I needed because of running locally. Could've ran inside a Docker instead
-os.environ["HADOOP_HOME"] = r"D:\zehro\Desktop\PlaxidityX-Assignment\hadoop"
-os.environ["PATH"] += r";D:\zehro\Desktop\PlaxidityX-Assignment\hadoop\bin"
+os.environ["HADOOP_HOME"] = r"somelocalpath\hadoop"
+os.environ["PATH"] += r";somelocalpath\hadoop\bin"
 
 def get_average_salaries(fielding_df: DataFrame, salaries_df: DataFrame):
     INFIELD_POSITIONS = ["1B", "2B", "3B", "SS"]
